@@ -7,5 +7,7 @@
 #include <editline/readline.h>
 
 extern void parse(char *);
+extern void parse_setup(void);
+extern void parse_cleanup(void);
 
 #endif // PARSE_H

@@ -2,6 +2,8 @@
 
 int 
 main(int argc, char *argv[]) {
+  // Setup information with mpc.
+  parse_setup();
 
   // Print version and exit information.
   printf("MiniLisp Version 0.0.1\n");
@@ -18,6 +20,8 @@ main(int argc, char *argv[]) {
 
     free(input);
   }
+
+  parse_cleanup();
 
   return 0;
 }
