@@ -16,8 +16,10 @@ main(int argc, char *argv[]) {
     // Adds the line to our current history.
     add_history(input);
 
+    // Parses the input.
     parse(input);
 
+    // Free the returned char pointer since it's allocated in readline.
     free(input);
   }
 

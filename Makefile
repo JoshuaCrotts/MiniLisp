@@ -9,7 +9,7 @@ CC = gcc
 # -Wl,-subsystem,windows gets rid of the console window
 COMPILER_FLAGS = -Wall -Werror -Wfloat-conversion -ggdb -g 
 
-LIBRARY_PATHS = -ledit
+LIBRARY_PATHS = -ledit -lm
 
 #OBJ_NAME specifies the name of our exectuable
 OBJ_NAME = minilisp
